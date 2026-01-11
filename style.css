@@ -76,7 +76,7 @@ body {
 }
 
 .header-text p {
-    white-space: nowrap;         /* prevents wrapping */
+    white-space: wrap;         /* prevents wrapping */
     font-size: 18px;
 }
 
