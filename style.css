@@ -51,21 +51,41 @@ body {
     z-index: 0; /* sits above image, below text */
 }
 
-/* Header text */
-.header-text {
+.hero {
     position: relative;
-    z-index: 2; /* above overlay */
-    color: white;
-    text-align: center;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 0 20px;
+    height: 100vh;
 }
 
-.header-text h1{
+/* Header text */
+.header-text {
+    position: absolute;
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+
+    top: 80%;                    /* slightly below center */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 16px;
+}
+
+.header-text h1 {
     font-size: 35px;
     margin-top: 20px;
 }
+
+.header-text p {
+    white-space: nowrap;         /* prevents wrapping */
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .header-text p {
+        font-size: 14px;
+    }
+}
+
 .menu-icon,
 .close-icon {
     font-size: 26px;
